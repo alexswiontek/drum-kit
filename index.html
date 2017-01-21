@@ -6,9 +6,87 @@
     <meta name="author" content="Alex Swiontek">
     <meta name="description" content="JS Drum Kit">
     <title>JS Drum Kit</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+    <!-- row 1 (top) -->
+    <section class="row">
+      <div data-key="81" class="key">
+        <kbd>q</kbd>
+        <span data-key="sound">horn</span>
+      </div>
+      <div data-key="87" class="key">
+        <kbd>w</kbd>
+        <span data-key="sound">chant</span>
+      </div>
+      <div data-key="69" class="key">
+        <kbd>e</kbd>
+        <span data-key="sound">snare2</span>
+      </div>
+      <div data-key="82" class="key">
+        <kbd>r</kbd>
+        <span data-key="sound">crash</span>
+      </div>
+    </section>
 
+    <!-- row 2 (middle) -->
+    <section class="row" style="padding-left: 40px">
+      <div data-key="65" class="key">
+        <kbd>a</kbd>
+        <span data-key="sound">clap2</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>s</kbd>
+        <span data-key="sound">sizzle</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>d</kbd>
+        <span data-key="sound">hat</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>f</kbd>
+        <span data-key="sound">triple</span>
+      </div>
+    </section>
+
+    <!-- row 3 (last) -->
+    <section class="row" style="padding-left: 80px">
+      <div data-key="90" class="key">
+        <kbd>z</kbd>
+        <span data-key="sound">kick</span>
+      </div>
+      <div data-key="88" class="key">
+        <kbd>x</kbd>
+        <span data-key="sound">clap</span>
+      </div>
+      <div data-key="67" class="key">
+        <kbd>c</kbd>
+        <span data-key="sound">rim</span>
+      </div>
+      <div data-key="86" class="key">
+        <kbd>v</kbd>
+        <span data-key="sound">snare</span>
+      </div>
+    </section>
+
+    <!-- audio row 1 -->
+    <audio data-key="81" src="sounds/hip-hop/horn.wav"></audio>
+    <audio data-key="87" src="sounds/hip-hop/chant.wav"></audio>
+    <audio data-key="69" src="sounds/hip-hop/snare2.wav"></audio>
+    <audio data-key="82" src="sounds/hip-hop/crash.wav"></audio>
+
+    <!-- audio row 2 -->
+    <audio data-key="65" src="sounds/hip-hop/clap-snare.wav"></audio>
+    <audio data-key="83" src="sounds/hip-hop/sizzle.wav"></audio>
+    <audio data-key="68" src="sounds/hip-hop/hat.wav"></audio>
+    <audio data-key="70" src="sounds/hip-hop/triple.wav"></audio>
+
+    <!-- audio row 3 -->
+    <audio data-key="90" src="sounds/hip-hop/kick.wav"></audio>
+    <audio data-key="88" src="sounds/hip-hop/clap.wav"></audio>
+    <audio data-key="67" src="sounds/hip-hop/rim.wav"></audio>
+    <audio data-key="86" src="sounds/hip-hop/snare.wav"></audio>
+
+    <script src="app.js"></script>
   </body>
 </html>
