@@ -1,13 +1,32 @@
+html {
+  background: url('img/hiphop.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 2.2em;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex: 1;
   min-height: 100vh;
   min-width: 100vw;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
+  color: #2c3e50;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 kbd {
@@ -30,16 +49,37 @@ kbd {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
-  background: black;
-  width: 100px;
-  height: 100px;
-  border: 2px solid red;
-  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  width: 96px;
+  height: 96px;
+  border: 2px solid firebrick;
+  cursor: pointer;
   transition: all 0.07s;
+  margin-right: 10px;
+}
+
+.key * {
+  cursor: pointer;
+  user-select: none;
+  color: black;
 }
 
 .playing {
   transform: scale(1.1);
   border-width: 6px;
+}
+
+@media screen and (max-width: 450px) {
+  kbd {
+    display: none;
+  }
+
+  .key {
+    width: 75px;
+    height: 75px;
+  }
+
+  .sound-name {
+    font-size: 32px;
+  }
 }
